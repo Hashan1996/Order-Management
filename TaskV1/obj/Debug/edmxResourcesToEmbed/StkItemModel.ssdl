@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Task_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="StkItem">
+    <Key>
+      <PropertyRef Name="StockLink" />
+    </Key>
+    <Property Name="StockLink" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="255" />
+    <Property Name="Description_1" Type="varchar" MaxLength="255" />
+    <Property Name="Description_2" Type="varchar" MaxLength="255" />
+    <Property Name="Description_3" Type="varchar" MaxLength="255" />
+    <Property Name="ItemGroup" Type="varchar" MaxLength="20" />
+    <Property Name="Pack" Type="varchar" MaxLength="5" />
+    <Property Name="TTI" Type="varchar" MaxLength="4" />
+    <Property Name="TTC" Type="varchar" MaxLength="4" />
+    <Property Name="TTG" Type="varchar" MaxLength="4" />
+    <Property Name="TTR" Type="varchar" MaxLength="4" />
+    <Property Name="Bar_Code" Type="varchar" MaxLength="255" />
+    <Property Name="Re_Ord_Lvl" Type="float" />
+    <Property Name="Re_Ord_Qty" Type="float" />
+    <Property Name="Min_Lvl" Type="float" />
+    <Property Name="Max_Lvl" Type="float" />
+    <Property Name="AveUCst" Type="float" />
+    <Property Name="LatUCst" Type="float" />
+    <Property Name="LowUCst" Type="float" />
+    <Property Name="HigUCst" Type="float" />
+    <Property Name="StdUCst" Type="float" />
+    <Property Name="Qty_On_Hand" Type="float" />
+    <Property Name="LGrvCount" Type="float" />
+    <Property Name="ServiceItem" Type="bit" Nullable="false" />
+    <Property Name="ItemActive" Type="bit" Nullable="false" />
+    <Property Name="ReservedQty" Type="float" />
+    <Property Name="QtyOnPO" Type="float" />
+    <Property Name="QtyOnSO" Type="float" />
+    <Property Name="WhseItem" Type="bit" Nullable="false" />
+    <Property Name="SerialItem" Type="bit" Nullable="false" />
+    <Property Name="DuplicateSN" Type="bit" Nullable="false" />
+    <Property Name="StrictSN" Type="bit" Nullable="false" />
+    <Property Name="BomCode" Type="varchar" MaxLength="1" />
+    <Property Name="SMtrxCol" Type="int" />
+    <Property Name="PMtrxCol" Type="int" />
+    <Property Name="JobQty" Type="float" />
+    <Property Name="cModel" Type="varchar" MaxLength="50" />
+    <Property Name="cRevision" Type="varchar" MaxLength="50" />
+    <Property Name="cComponent" Type="varchar" MaxLength="50" />
+    <Property Name="dDateReleased" Type="smalldatetime" />
+    <Property Name="iBinLocationID" Type="int" />
+    <Property Name="dStkitemTimeStamp" Type="datetime" />
+    <Property Name="iInvSegValue1ID" Type="int" />
+    <Property Name="iInvSegValue2ID" Type="int" />
+    <Property Name="iInvSegValue3ID" Type="int" />
+    <Property Name="iInvSegValue4ID" Type="int" />
+    <Property Name="iInvSegValue5ID" Type="int" />
+    <Property Name="iInvSegValue6ID" Type="int" />
+    <Property Name="iInvSegValue7ID" Type="int" />
+    <Property Name="cExtDescription" Type="varchar" MaxLength="255" />
+    <Property Name="cSimpleCode" Type="varchar" MaxLength="20" />
+    <Property Name="bCommissionItem" Type="bit" Nullable="false" />
+    <Property Name="MFPQty" Type="float" />
+    <Property Name="bLotItem" Type="bit" Nullable="false" />
+    <Property Name="iLotStatus" Type="int" />
+    <Property Name="bLotMustExpire" Type="bit" Nullable="false" />
+    <Property Name="iItemCostingMethod" Type="int" Nullable="false" />
+    <Property Name="fItemLastGRVCost" Type="float" Nullable="false" />
+    <Property Name="iEUCommodityID" Type="int" Nullable="false" />
+    <Property Name="iEUSupplementaryUnitID" Type="int" Nullable="false" />
+    <Property Name="fNetMass" Type="float" Nullable="false" />
+    <Property Name="iUOMStockingUnitID" Type="int" />
+    <Property Name="iUOMDefPurchaseUnitID" Type="int" />
+    <Property Name="iUOMDefSellUnitID" Type="int" />
+    <Property Name="uiIISRVPRICEID" Type="int" />
+    <Property Name="ubIIEDGEALLOWANCE" Type="bit" />
+    <Property Name="ufIIThickness" Type="float" />
+    <Property Name="ubIITemplate" Type="bit" />
+    <Property Name="uiIITemplPriceID" Type="int" />
+    <Property Name="ubIIGLASSSERVICE" Type="bit" />
+    <Property Name="uiIIItemType" Type="int" />
+    <Property Name="ufIIMINCHRG" Type="float" />
+    <Property Name="ufIIMINSQM" Type="float" />
+    <Property Name="ufIIWEIGHT" Type="float" />
+    <Property Name="uiIIPRICETYPEID" Type="int" />
+    <Property Name="ubIIPrintLabels" Type="bit" />
+    <Property Name="DefaultGlassService" Type="bit" Nullable="false" />
+    <Property Name="IsLaminateItem" Type="bit" Nullable="false" />
+    <Property Name="ufIIQtyInVolume" Type="float" />
+    <Property Name="uiIIMainItemLink" Type="int" />
+    <Property Name="ubIIAllowNegative" Type="bit" />
+    <Property Name="uiIISupplier" Type="int" />
+    <Property Name="uiIIWidth" Type="int" />
+    <Property Name="uiIIHeight" Type="int" />
+    <Property Name="ufIILotQty" Type="float" />
+    <Property Name="ufIIGrvQty" Type="float" />
+    <Property Name="ufIISOQtyVolume" Type="float" />
+    <Property Name="uiIIWarehouse" Type="float" />
+    <Property Name="ShowPODes" Type="bit" Nullable="false" />
+    <Property Name="IsNonStockItem" Type="bit" Nullable="false" />
+    <Property Name="IsExternalItem" Type="bit" Nullable="false" />
+    <Property Name="POMinimumArea" Type="float" Nullable="false" />
+    <Property Name="AccountNumber" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CostCentre" Type="int" Nullable="false" />
+    <Property Name="AddDetails" Type="varchar" MaxLength="255" />
+    <Property Name="SalesAccount" Type="varchar" MaxLength="50" />
+    <Property Name="PurchaseAccount" Type="varchar" MaxLength="50" />
+    <Property Name="Length" Type="float" />
+    <Property Name="BulkQty" Type="float" />
+    <Property Name="BulkRate" Type="float" />
+    <Property Name="PriceListItem" Type="bit" Nullable="false" />
+    <Property Name="CalcPriceAsPercentage" Type="bit" Nullable="false" />
+    <Property Name="CalcPricePercentage" Type="float" Nullable="false" />
+    <Property Name="BOMItem" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Task_DBModelStoreContainer">
+    <EntitySet Name="StkItem" EntityType="Self.StkItem" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

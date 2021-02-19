@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Task_DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="StkItem">
+    <Key>
+      <PropertyRef Name="StockLink" />
+    </Key>
+    <Property Name="StockLink" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Description_1" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Description_2" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Description_3" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="ItemGroup" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Pack" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="TTI" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="TTC" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="TTG" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="TTR" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="Bar_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Re_Ord_Lvl" Type="Double" />
+    <Property Name="Re_Ord_Qty" Type="Double" />
+    <Property Name="Min_Lvl" Type="Double" />
+    <Property Name="Max_Lvl" Type="Double" />
+    <Property Name="AveUCst" Type="Double" />
+    <Property Name="LatUCst" Type="Double" />
+    <Property Name="LowUCst" Type="Double" />
+    <Property Name="HigUCst" Type="Double" />
+    <Property Name="StdUCst" Type="Double" />
+    <Property Name="Qty_On_Hand" Type="Double" />
+    <Property Name="LGrvCount" Type="Double" />
+    <Property Name="ServiceItem" Type="Boolean" Nullable="false" />
+    <Property Name="ItemActive" Type="Boolean" Nullable="false" />
+    <Property Name="ReservedQty" Type="Double" />
+    <Property Name="QtyOnPO" Type="Double" />
+    <Property Name="QtyOnSO" Type="Double" />
+    <Property Name="WhseItem" Type="Boolean" Nullable="false" />
+    <Property Name="SerialItem" Type="Boolean" Nullable="false" />
+    <Property Name="DuplicateSN" Type="Boolean" Nullable="false" />
+    <Property Name="StrictSN" Type="Boolean" Nullable="false" />
+    <Property Name="BomCode" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="SMtrxCol" Type="Int32" />
+    <Property Name="PMtrxCol" Type="Int32" />
+    <Property Name="JobQty" Type="Double" />
+    <Property Name="cModel" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="cRevision" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="cComponent" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="dDateReleased" Type="DateTime" Precision="0" />
+    <Property Name="iBinLocationID" Type="Int32" />
+    <Property Name="dStkitemTimeStamp" Type="DateTime" Precision="3" />
+    <Property Name="iInvSegValue1ID" Type="Int32" />
+    <Property Name="iInvSegValue2ID" Type="Int32" />
+    <Property Name="iInvSegValue3ID" Type="Int32" />
+    <Property Name="iInvSegValue4ID" Type="Int32" />
+    <Property Name="iInvSegValue5ID" Type="Int32" />
+    <Property Name="iInvSegValue6ID" Type="Int32" />
+    <Property Name="iInvSegValue7ID" Type="Int32" />
+    <Property Name="cExtDescription" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="cSimpleCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="bCommissionItem" Type="Boolean" Nullable="false" />
+    <Property Name="MFPQty" Type="Double" />
+    <Property Name="bLotItem" Type="Boolean" Nullable="false" />
+    <Property Name="iLotStatus" Type="Int32" />
+    <Property Name="bLotMustExpire" Type="Boolean" Nullable="false" />
+    <Property Name="iItemCostingMethod" Type="Int32" Nullable="false" />
+    <Property Name="fItemLastGRVCost" Type="Double" Nullable="false" />
+    <Property Name="iEUCommodityID" Type="Int32" Nullable="false" />
+    <Property Name="iEUSupplementaryUnitID" Type="Int32" Nullable="false" />
+    <Property Name="fNetMass" Type="Double" Nullable="false" />
+    <Property Name="iUOMStockingUnitID" Type="Int32" />
+    <Property Name="iUOMDefPurchaseUnitID" Type="Int32" />
+    <Property Name="iUOMDefSellUnitID" Type="Int32" />
+    <Property Name="uiIISRVPRICEID" Type="Int32" />
+    <Property Name="ubIIEDGEALLOWANCE" Type="Boolean" />
+    <Property Name="ufIIThickness" Type="Double" />
+    <Property Name="ubIITemplate" Type="Boolean" />
+    <Property Name="uiIITemplPriceID" Type="Int32" />
+    <Property Name="ubIIGLASSSERVICE" Type="Boolean" />
+    <Property Name="uiIIItemType" Type="Int32" />
+    <Property Name="ufIIMINCHRG" Type="Double" />
+    <Property Name="ufIIMINSQM" Type="Double" />
+    <Property Name="ufIIWEIGHT" Type="Double" />
+    <Property Name="uiIIPRICETYPEID" Type="Int32" />
+    <Property Name="ubIIPrintLabels" Type="Boolean" />
+    <Property Name="DefaultGlassService" Type="Boolean" Nullable="false" />
+    <Property Name="IsLaminateItem" Type="Boolean" Nullable="false" />
+    <Property Name="ufIIQtyInVolume" Type="Double" />
+    <Property Name="uiIIMainItemLink" Type="Int32" />
+    <Property Name="ubIIAllowNegative" Type="Boolean" />
+    <Property Name="uiIISupplier" Type="Int32" />
+    <Property Name="uiIIWidth" Type="Int32" />
+    <Property Name="uiIIHeight" Type="Int32" />
+    <Property Name="ufIILotQty" Type="Double" />
+    <Property Name="ufIIGrvQty" Type="Double" />
+    <Property Name="ufIISOQtyVolume" Type="Double" />
+    <Property Name="uiIIWarehouse" Type="Double" />
+    <Property Name="ShowPODes" Type="Boolean" Nullable="false" />
+    <Property Name="IsNonStockItem" Type="Boolean" Nullable="false" />
+    <Property Name="IsExternalItem" Type="Boolean" Nullable="false" />
+    <Property Name="POMinimumArea" Type="Double" Nullable="false" />
+    <Property Name="AccountNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CostCentre" Type="Int32" Nullable="false" />
+    <Property Name="AddDetails" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="SalesAccount" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PurchaseAccount" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Length" Type="Double" />
+    <Property Name="BulkQty" Type="Double" />
+    <Property Name="BulkRate" Type="Double" />
+    <Property Name="PriceListItem" Type="Boolean" Nullable="false" />
+    <Property Name="CalcPriceAsPercentage" Type="Boolean" Nullable="false" />
+    <Property Name="CalcPricePercentage" Type="Double" Nullable="false" />
+    <Property Name="BOMItem" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Task_DBEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="StkItems" EntityType="Self.StkItem" />
+  </EntityContainer>
+</Schema>

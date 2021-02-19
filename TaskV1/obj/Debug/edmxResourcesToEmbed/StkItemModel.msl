@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Task_DBModelStoreContainer" CdmEntityContainer="Task_DBEntities1">
+    <EntitySetMapping Name="StkItems">
+      <EntityTypeMapping TypeName="Task_DBModel.StkItem">
+        <MappingFragment StoreEntitySet="StkItem">
+          <ScalarProperty Name="StockLink" ColumnName="StockLink" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Description_1" ColumnName="Description_1" />
+          <ScalarProperty Name="Description_2" ColumnName="Description_2" />
+          <ScalarProperty Name="Description_3" ColumnName="Description_3" />
+          <ScalarProperty Name="ItemGroup" ColumnName="ItemGroup" />
+          <ScalarProperty Name="Pack" ColumnName="Pack" />
+          <ScalarProperty Name="TTI" ColumnName="TTI" />
+          <ScalarProperty Name="TTC" ColumnName="TTC" />
+          <ScalarProperty Name="TTG" ColumnName="TTG" />
+          <ScalarProperty Name="TTR" ColumnName="TTR" />
+          <ScalarProperty Name="Bar_Code" ColumnName="Bar_Code" />
+          <ScalarProperty Name="Re_Ord_Lvl" ColumnName="Re_Ord_Lvl" />
+          <ScalarProperty Name="Re_Ord_Qty" ColumnName="Re_Ord_Qty" />
+          <ScalarProperty Name="Min_Lvl" ColumnName="Min_Lvl" />
+          <ScalarProperty Name="Max_Lvl" ColumnName="Max_Lvl" />
+          <ScalarProperty Name="AveUCst" ColumnName="AveUCst" />
+          <ScalarProperty Name="LatUCst" ColumnName="LatUCst" />
+          <ScalarProperty Name="LowUCst" ColumnName="LowUCst" />
+          <ScalarProperty Name="HigUCst" ColumnName="HigUCst" />
+          <ScalarProperty Name="StdUCst" ColumnName="StdUCst" />
+          <ScalarProperty Name="Qty_On_Hand" ColumnName="Qty_On_Hand" />
+          <ScalarProperty Name="LGrvCount" ColumnName="LGrvCount" />
+          <ScalarProperty Name="ServiceItem" ColumnName="ServiceItem" />
+          <ScalarProperty Name="ItemActive" ColumnName="ItemActive" />
+          <ScalarProperty Name="ReservedQty" ColumnName="ReservedQty" />
+          <ScalarProperty Name="QtyOnPO" ColumnName="QtyOnPO" />
+          <ScalarProperty Name="QtyOnSO" ColumnName="QtyOnSO" />
+          <ScalarProperty Name="WhseItem" ColumnName="WhseItem" />
+          <ScalarProperty Name="SerialItem" ColumnName="SerialItem" />
+          <ScalarProperty Name="DuplicateSN" ColumnName="DuplicateSN" />
+          <ScalarProperty Name="StrictSN" ColumnName="StrictSN" />
+          <ScalarProperty Name="BomCode" ColumnName="BomCode" />
+          <ScalarProperty Name="SMtrxCol" ColumnName="SMtrxCol" />
+          <ScalarProperty Name="PMtrxCol" ColumnName="PMtrxCol" />
+          <ScalarProperty Name="JobQty" ColumnName="JobQty" />
+          <ScalarProperty Name="cModel" ColumnName="cModel" />
+          <ScalarProperty Name="cRevision" ColumnName="cRevision" />
+          <ScalarProperty Name="cComponent" ColumnName="cComponent" />
+          <ScalarProperty Name="dDateReleased" ColumnName="dDateReleased" />
+          <ScalarProperty Name="iBinLocationID" ColumnName="iBinLocationID" />
+          <ScalarProperty Name="dStkitemTimeStamp" ColumnName="dStkitemTimeStamp" />
+          <ScalarProperty Name="iInvSegValue1ID" ColumnName="iInvSegValue1ID" />
+          <ScalarProperty Name="iInvSegValue2ID" ColumnName="iInvSegValue2ID" />
+          <ScalarProperty Name="iInvSegValue3ID" ColumnName="iInvSegValue3ID" />
+          <ScalarProperty Name="iInvSegValue4ID" ColumnName="iInvSegValue4ID" />
+          <ScalarProperty Name="iInvSegValue5ID" ColumnName="iInvSegValue5ID" />
+          <ScalarProperty Name="iInvSegValue6ID" ColumnName="iInvSegValue6ID" />
+          <ScalarProperty Name="iInvSegValue7ID" ColumnName="iInvSegValue7ID" />
+          <ScalarProperty Name="cExtDescription" ColumnName="cExtDescription" />
+          <ScalarProperty Name="cSimpleCode" ColumnName="cSimpleCode" />
+          <ScalarProperty Name="bCommissionItem" ColumnName="bCommissionItem" />
+          <ScalarProperty Name="MFPQty" ColumnName="MFPQty" />
+          <ScalarProperty Name="bLotItem" ColumnName="bLotItem" />
+          <ScalarProperty Name="iLotStatus" ColumnName="iLotStatus" />
+          <ScalarProperty Name="bLotMustExpire" ColumnName="bLotMustExpire" />
+          <ScalarProperty Name="iItemCostingMethod" ColumnName="iItemCostingMethod" />
+          <ScalarProperty Name="fItemLastGRVCost" ColumnName="fItemLastGRVCost" />
+          <ScalarProperty Name="iEUCommodityID" ColumnName="iEUCommodityID" />
+          <ScalarProperty Name="iEUSupplementaryUnitID" ColumnName="iEUSupplementaryUnitID" />
+          <ScalarProperty Name="fNetMass" ColumnName="fNetMass" />
+          <ScalarProperty Name="iUOMStockingUnitID" ColumnName="iUOMStockingUnitID" />
+          <ScalarProperty Name="iUOMDefPurchaseUnitID" ColumnName="iUOMDefPurchaseUnitID" />
+          <ScalarProperty Name="iUOMDefSellUnitID" ColumnName="iUOMDefSellUnitID" />
+          <ScalarProperty Name="uiIISRVPRICEID" ColumnName="uiIISRVPRICEID" />
+          <ScalarProperty Name="ubIIEDGEALLOWANCE" ColumnName="ubIIEDGEALLOWANCE" />
+          <ScalarProperty Name="ufIIThickness" ColumnName="ufIIThickness" />
+          <ScalarProperty Name="ubIITemplate" ColumnName="ubIITemplate" />
+          <ScalarProperty Name="uiIITemplPriceID" ColumnName="uiIITemplPriceID" />
+          <ScalarProperty Name="ubIIGLASSSERVICE" ColumnName="ubIIGLASSSERVICE" />
+          <ScalarProperty Name="uiIIItemType" ColumnName="uiIIItemType" />
+          <ScalarProperty Name="ufIIMINCHRG" ColumnName="ufIIMINCHRG" />
+          <ScalarProperty Name="ufIIMINSQM" ColumnName="ufIIMINSQM" />
+          <ScalarProperty Name="ufIIWEIGHT" ColumnName="ufIIWEIGHT" />
+          <ScalarProperty Name="uiIIPRICETYPEID" ColumnName="uiIIPRICETYPEID" />
+          <ScalarProperty Name="ubIIPrintLabels" ColumnName="ubIIPrintLabels" />
+          <ScalarProperty Name="DefaultGlassService" ColumnName="DefaultGlassService" />
+          <ScalarProperty Name="IsLaminateItem" ColumnName="IsLaminateItem" />
+          <ScalarProperty Name="ufIIQtyInVolume" ColumnName="ufIIQtyInVolume" />
+          <ScalarProperty Name="uiIIMainItemLink" ColumnName="uiIIMainItemLink" />
+          <ScalarProperty Name="ubIIAllowNegative" ColumnName="ubIIAllowNegative" />
+          <ScalarProperty Name="uiIISupplier" ColumnName="uiIISupplier" />
+          <ScalarProperty Name="uiIIWidth" ColumnName="uiIIWidth" />
+          <ScalarProperty Name="uiIIHeight" ColumnName="uiIIHeight" />
+          <ScalarProperty Name="ufIILotQty" ColumnName="ufIILotQty" />
+          <ScalarProperty Name="ufIIGrvQty" ColumnName="ufIIGrvQty" />
+          <ScalarProperty Name="ufIISOQtyVolume" ColumnName="ufIISOQtyVolume" />
+          <ScalarProperty Name="uiIIWarehouse" ColumnName="uiIIWarehouse" />
+          <ScalarProperty Name="ShowPODes" ColumnName="ShowPODes" />
+          <ScalarProperty Name="IsNonStockItem" ColumnName="IsNonStockItem" />
+          <ScalarProperty Name="IsExternalItem" ColumnName="IsExternalItem" />
+          <ScalarProperty Name="POMinimumArea" ColumnName="POMinimumArea" />
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="CostCentre" ColumnName="CostCentre" />
+          <ScalarProperty Name="AddDetails" ColumnName="AddDetails" />
+          <ScalarProperty Name="SalesAccount" ColumnName="SalesAccount" />
+          <ScalarProperty Name="PurchaseAccount" ColumnName="PurchaseAccount" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="BulkQty" ColumnName="BulkQty" />
+          <ScalarProperty Name="BulkRate" ColumnName="BulkRate" />
+          <ScalarProperty Name="PriceListItem" ColumnName="PriceListItem" />
+          <ScalarProperty Name="CalcPriceAsPercentage" ColumnName="CalcPriceAsPercentage" />
+          <ScalarProperty Name="CalcPricePercentage" ColumnName="CalcPricePercentage" />
+          <ScalarProperty Name="BOMItem" ColumnName="BOMItem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

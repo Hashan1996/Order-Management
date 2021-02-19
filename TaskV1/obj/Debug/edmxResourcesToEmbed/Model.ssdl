@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Task_DBModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="DCLink" />
+    </Key>
+    <Property Name="DCLink" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Account" Type="varchar" MaxLength="20" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Title" Type="varchar" MaxLength="5" />
+    <Property Name="PriceHalf" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Init" Type="varchar" MaxLength="6" />
+    <Property Name="Contact_Person" Type="varchar" MaxLength="30" />
+    <Property Name="Physical1" Type="varchar" MaxLength="40" />
+    <Property Name="Physical2" Type="varchar" MaxLength="40" />
+    <Property Name="Physical3" Type="varchar" MaxLength="40" />
+    <Property Name="Physical4" Type="varchar" MaxLength="40" />
+    <Property Name="Physical5" Type="varchar" MaxLength="40" />
+    <Property Name="PhysicalPC" Type="varchar" MaxLength="15" />
+    <Property Name="Addressee" Type="varchar" MaxLength="30" />
+    <Property Name="Post1" Type="varchar" MaxLength="40" />
+    <Property Name="Post2" Type="varchar" MaxLength="40" />
+    <Property Name="Post3" Type="varchar" MaxLength="40" />
+    <Property Name="Post4" Type="varchar" MaxLength="40" />
+    <Property Name="Post5" Type="varchar" MaxLength="40" />
+    <Property Name="PostPC" Type="varchar" MaxLength="15" />
+    <Property Name="Delivered_To" Type="varchar" MaxLength="30" />
+    <Property Name="Telephone" Type="varchar" MaxLength="25" />
+    <Property Name="Telephone2" Type="varchar" MaxLength="25" />
+    <Property Name="Fax1" Type="varchar" MaxLength="25" />
+    <Property Name="Fax2" Type="varchar" MaxLength="25" />
+    <Property Name="AccountTerms" Type="int" />
+    <Property Name="CT" Type="bit" Nullable="false" />
+    <Property Name="Tax_Number" Type="varchar" MaxLength="15" />
+    <Property Name="Registration" Type="varchar" MaxLength="20" />
+    <Property Name="Credit_Limit" Type="float" />
+    <Property Name="RepID" Type="int" />
+    <Property Name="Interest_Rate" Type="float" />
+    <Property Name="Discount" Type="float" />
+    <Property Name="On_Hold" Type="bit" Nullable="false" />
+    <Property Name="BFOpenType" Type="int" />
+    <Property Name="EMail" Type="varchar" MaxLength="60" />
+    <Property Name="BankLink" Type="int" />
+    <Property Name="BranchCode" Type="varchar" MaxLength="30" />
+    <Property Name="BankAccNum" Type="varchar" MaxLength="30" />
+    <Property Name="BankAccType" Type="varchar" MaxLength="30" />
+    <Property Name="AutoDisc" Type="float" />
+    <Property Name="DiscMtrxRow" Type="int" />
+    <Property Name="MainAccLink" Type="int" />
+    <Property Name="CashDebtor" Type="bit" Nullable="false" />
+    <Property Name="DCBalance" Type="float" />
+    <Property Name="CheckTerms" Type="bit" Nullable="false" />
+    <Property Name="UseEmail" Type="bit" Nullable="false" />
+    <Property Name="iIncidentTypeID" Type="int" />
+    <Property Name="iBusTypeID" Type="int" />
+    <Property Name="iBusClassID" Type="int" />
+    <Property Name="iCountryID" Type="int" />
+    <Property Name="iAgentID" Type="int" />
+    <Property Name="dTimeStamp" Type="datetime" />
+    <Property Name="cAccDescription" Type="varchar" MaxLength="80" />
+    <Property Name="cWebPage" Type="varchar" MaxLength="50" />
+    <Property Name="iClassID" Type="int" />
+    <Property Name="iAreasID" Type="int" />
+    <Property Name="cBankRefNr" Type="varchar" MaxLength="30" />
+    <Property Name="iCurrencyID" Type="int" />
+    <Property Name="bStatPrint" Type="bit" Nullable="false" />
+    <Property Name="bStatEmail" Type="bit" Nullable="false" />
+    <Property Name="cStatEmailPass" Type="varchar" MaxLength="20" />
+    <Property Name="bForCurAcc" Type="bit" Nullable="false" />
+    <Property Name="fForeignBalance" Type="float" />
+    <Property Name="bTaxPrompt" Type="bit" Nullable="false" />
+    <Property Name="iARPriceListNameID" Type="int" />
+    <Property Name="iSettlementTermsID" Type="int" Nullable="false" />
+    <Property Name="bSourceDocPrint" Type="bit" Nullable="false" />
+    <Property Name="bSourceDocEmail" Type="bit" Nullable="false" />
+    <Property Name="iEUCountryID" Type="int" Nullable="false" />
+    <Property Name="iDefTaxTypeID" Type="int" Nullable="false" />
+    <Property Name="bCODAccount" Type="bit" Nullable="false" />
+    <Property Name="udARDate" Type="datetime" />
+    <Property Name="uiARDeliveryMethod" Type="int" />
+    <Property Name="tOrderNotes" Type="text" />
+    <Property Name="uiARCATID" Type="int" />
+    <Property Name="FuelLevyPercen" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="FLID" Type="int" Nullable="false" />
+    <Property Name="AccountStatusID" Type="int" Nullable="false" />
+    <Property Name="IGUFabRate" Type="float" Nullable="false" />
+    <Property Name="CreditPercentage" Type="float" Nullable="false" />
+    <Property Name="TotalDebitBalance" Type="float" Nullable="false" />
+    <Property Name="TotInvoiced" Type="float" Nullable="false" />
+    <Property Name="TotPending" Type="float" Nullable="false" />
+    <Property Name="TotReceived" Type="float" Nullable="false" />
+    <Property Name="IsGlobalAcc" Type="bit" Nullable="false" />
+    <Property Name="IsProspect" Type="bit" Nullable="false" />
+    <Property Name="CardIdentification" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LegalName" Type="varchar" MaxLength="50" />
+    <Property Name="TrustName" Type="varchar" MaxLength="50" />
+    <Property Name="BusinessEstablished" Type="smalldatetime" />
+    <Property Name="RegistrationNo" Type="varchar" MaxLength="20" />
+    <Property Name="ACN" Type="varchar" MaxLength="20" />
+    <Property Name="Token" Type="varchar" MaxLength="30" />
+    <Property Name="EntityStructureID" Type="int" Nullable="false" />
+    <Property Name="InsuredID" Type="int" Nullable="false" />
+    <Property Name="CreditApplicationDate" Type="smalldatetime" />
+    <Property Name="PPS_ExpiryDate" Type="smalldatetime" />
+    <Property Name="PersonalGurantee" Type="varchar" MaxLength="200" />
+    <Property Name="CC_NameOnCard" Type="varchar" MaxLength="20" />
+    <Property Name="CC_CardNumber" Type="varchar" MaxLength="16" />
+    <Property Name="CC_ExpiryDate" Type="smalldatetime" />
+    <Property Name="BSB" Type="varchar" MaxLength="6" />
+    <Property Name="AcountNumber" Type="varchar" MaxLength="20" />
+    <Property Name="AcountName" Type="varchar" MaxLength="20" />
+    <Property Name="CreditSearch" Type="smalldatetime" />
+    <Property Name="GONI" Type="varchar" MaxLength="20" />
+    <Property Name="bSendOrderConfirmations" Type="bit" Nullable="false" />
+    <Property Name="EmailOrderConfirmationTo" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="EmailTaxInvoicesTo" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="EmailStatementsTo" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="RebateID" Type="int" Nullable="false" />
+    <Property Name="XeroGUID" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ItemOrder">
+    <Key>
+      <PropertyRef Name="IOLink" />
+    </Key>
+    <Property Name="IOLink" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IO_StockLink" Type="int" Nullable="false" />
+    <Property Name="IO_ODLink" Type="int" Nullable="false" />
+    <Property Name="Description_1" Type="varchar" MaxLength="255" />
+    <Property Name="InvoiceNo" Type="nvarchar" MaxLength="100" />
+    <Property Name="InvoiceDate" Type="date" />
+    <Property Name="RefNo" Type="nvarchar" MaxLength="200" />
+    <Property Name="Note" Type="nvarchar" MaxLength="500" />
+    <Property Name="Qty" Type="int" />
+    <Property Name="Price" Type="decimal" Precision="7" Scale="2" />
+    <Property Name="Tax" Type="decimal" Precision="7" Scale="2" />
+    <Property Name="ExclAmount" Type="decimal" Precision="7" Scale="2" />
+    <Property Name="TaxAmount" Type="decimal" Precision="7" Scale="2" />
+    <Property Name="InclAmount" Type="decimal" Precision="7" Scale="2" />
+  </EntityType>
+  <EntityType Name="OrderDetails">
+    <Key>
+      <PropertyRef Name="ODLink" />
+    </Key>
+    <Property Name="ODLink" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OD_DCLink" Type="int" Nullable="false" />
+    <Property Name="TotalExclAmount" Type="decimal" Precision="7" Scale="2" />
+    <Property Name="TotalTaxAmount" Type="decimal" Precision="7" Scale="2" />
+    <Property Name="TotalInclAmount" Type="decimal" Precision="7" Scale="2" />
+  </EntityType>
+  <EntityType Name="StkItem">
+    <Key>
+      <PropertyRef Name="StockLink" />
+    </Key>
+    <Property Name="StockLink" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="255" />
+    <Property Name="Description_1" Type="varchar" MaxLength="255" />
+    <Property Name="Description_2" Type="varchar" MaxLength="255" />
+    <Property Name="Description_3" Type="varchar" MaxLength="255" />
+    <Property Name="ItemGroup" Type="varchar" MaxLength="20" />
+    <Property Name="Pack" Type="varchar" MaxLength="5" />
+    <Property Name="TTI" Type="varchar" MaxLength="4" />
+    <Property Name="TTC" Type="varchar" MaxLength="4" />
+    <Property Name="TTG" Type="varchar" MaxLength="4" />
+    <Property Name="TTR" Type="varchar" MaxLength="4" />
+    <Property Name="Bar_Code" Type="varchar" MaxLength="255" />
+    <Property Name="Re_Ord_Lvl" Type="float" />
+    <Property Name="Re_Ord_Qty" Type="float" />
+    <Property Name="Min_Lvl" Type="float" />
+    <Property Name="Max_Lvl" Type="float" />
+    <Property Name="AveUCst" Type="float" />
+    <Property Name="LatUCst" Type="float" />
+    <Property Name="LowUCst" Type="float" />
+    <Property Name="HigUCst" Type="float" />
+    <Property Name="StdUCst" Type="float" />
+    <Property Name="Qty_On_Hand" Type="float" />
+    <Property Name="LGrvCount" Type="float" />
+    <Property Name="ServiceItem" Type="bit" Nullable="false" />
+    <Property Name="ItemActive" Type="bit" Nullable="false" />
+    <Property Name="ReservedQty" Type="float" />
+    <Property Name="QtyOnPO" Type="float" />
+    <Property Name="QtyOnSO" Type="float" />
+    <Property Name="WhseItem" Type="bit" Nullable="false" />
+    <Property Name="SerialItem" Type="bit" Nullable="false" />
+    <Property Name="DuplicateSN" Type="bit" Nullable="false" />
+    <Property Name="StrictSN" Type="bit" Nullable="false" />
+    <Property Name="BomCode" Type="varchar" MaxLength="1" />
+    <Property Name="SMtrxCol" Type="int" />
+    <Property Name="PMtrxCol" Type="int" />
+    <Property Name="JobQty" Type="float" />
+    <Property Name="cModel" Type="varchar" MaxLength="50" />
+    <Property Name="cRevision" Type="varchar" MaxLength="50" />
+    <Property Name="cComponent" Type="varchar" MaxLength="50" />
+    <Property Name="dDateReleased" Type="smalldatetime" />
+    <Property Name="iBinLocationID" Type="int" />
+    <Property Name="dStkitemTimeStamp" Type="datetime" />
+    <Property Name="iInvSegValue1ID" Type="int" />
+    <Property Name="iInvSegValue2ID" Type="int" />
+    <Property Name="iInvSegValue3ID" Type="int" />
+    <Property Name="iInvSegValue4ID" Type="int" />
+    <Property Name="iInvSegValue5ID" Type="int" />
+    <Property Name="iInvSegValue6ID" Type="int" />
+    <Property Name="iInvSegValue7ID" Type="int" />
+    <Property Name="cExtDescription" Type="varchar" MaxLength="255" />
+    <Property Name="cSimpleCode" Type="varchar" MaxLength="20" />
+    <Property Name="bCommissionItem" Type="bit" Nullable="false" />
+    <Property Name="MFPQty" Type="float" />
+    <Property Name="bLotItem" Type="bit" Nullable="false" />
+    <Property Name="iLotStatus" Type="int" />
+    <Property Name="bLotMustExpire" Type="bit" Nullable="false" />
+    <Property Name="iItemCostingMethod" Type="int" Nullable="false" />
+    <Property Name="fItemLastGRVCost" Type="float" Nullable="false" />
+    <Property Name="iEUCommodityID" Type="int" Nullable="false" />
+    <Property Name="iEUSupplementaryUnitID" Type="int" Nullable="false" />
+    <Property Name="fNetMass" Type="float" Nullable="false" />
+    <Property Name="iUOMStockingUnitID" Type="int" />
+    <Property Name="iUOMDefPurchaseUnitID" Type="int" />
+    <Property Name="iUOMDefSellUnitID" Type="int" />
+    <Property Name="uiIISRVPRICEID" Type="int" />
+    <Property Name="ubIIEDGEALLOWANCE" Type="bit" />
+    <Property Name="ufIIThickness" Type="float" />
+    <Property Name="ubIITemplate" Type="bit" />
+    <Property Name="uiIITemplPriceID" Type="int" />
+    <Property Name="ubIIGLASSSERVICE" Type="bit" />
+    <Property Name="uiIIItemType" Type="int" />
+    <Property Name="ufIIMINCHRG" Type="float" />
+    <Property Name="ufIIMINSQM" Type="float" />
+    <Property Name="ufIIWEIGHT" Type="float" />
+    <Property Name="uiIIPRICETYPEID" Type="int" />
+    <Property Name="ubIIPrintLabels" Type="bit" />
+    <Property Name="DefaultGlassService" Type="bit" Nullable="false" />
+    <Property Name="IsLaminateItem" Type="bit" Nullable="false" />
+    <Property Name="ufIIQtyInVolume" Type="float" />
+    <Property Name="uiIIMainItemLink" Type="int" />
+    <Property Name="ubIIAllowNegative" Type="bit" />
+    <Property Name="uiIISupplier" Type="int" />
+    <Property Name="uiIIWidth" Type="int" />
+    <Property Name="uiIIHeight" Type="int" />
+    <Property Name="ufIILotQty" Type="float" />
+    <Property Name="ufIIGrvQty" Type="float" />
+    <Property Name="ufIISOQtyVolume" Type="float" />
+    <Property Name="uiIIWarehouse" Type="float" />
+    <Property Name="ShowPODes" Type="bit" Nullable="false" />
+    <Property Name="IsNonStockItem" Type="bit" Nullable="false" />
+    <Property Name="IsExternalItem" Type="bit" Nullable="false" />
+    <Property Name="POMinimumArea" Type="float" Nullable="false" />
+    <Property Name="AccountNumber" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CostCentre" Type="int" Nullable="false" />
+    <Property Name="AddDetails" Type="varchar" MaxLength="255" />
+    <Property Name="SalesAccount" Type="varchar" MaxLength="50" />
+    <Property Name="PurchaseAccount" Type="varchar" MaxLength="50" />
+    <Property Name="Length" Type="float" />
+    <Property Name="BulkQty" Type="float" />
+    <Property Name="BulkRate" Type="float" />
+    <Property Name="PriceListItem" Type="bit" Nullable="false" />
+    <Property Name="CalcPriceAsPercentage" Type="bit" Nullable="false" />
+    <Property Name="CalcPricePercentage" Type="float" Nullable="false" />
+    <Property Name="BOMItem" Type="bit" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_ClientOrderDetails">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="OrderDetails" Type="Self.OrderDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="DCLink" />
+      </Principal>
+      <Dependent Role="OrderDetails">
+        <PropertyRef Name="OD_DCLink" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ItemOrderDetails1">
+    <End Role="StkItem" Type="Self.StkItem" Multiplicity="1" />
+    <End Role="ItemOrder" Type="Self.ItemOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StkItem">
+        <PropertyRef Name="StockLink" />
+      </Principal>
+      <Dependent Role="ItemOrder">
+        <PropertyRef Name="IO_StockLink" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ItemOrderDetails2">
+    <End Role="OrderDetails" Type="Self.OrderDetails" Multiplicity="1" />
+    <End Role="ItemOrder" Type="Self.ItemOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderDetails">
+        <PropertyRef Name="ODLink" />
+      </Principal>
+      <Dependent Role="ItemOrder">
+        <PropertyRef Name="IO_ODLink" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Task_DBModel1StoreContainer">
+    <EntitySet Name="Client" EntityType="Self.Client" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ItemOrder" EntityType="Self.ItemOrder" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OrderDetails" EntityType="Self.OrderDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StkItem" EntityType="Self.StkItem" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_ClientOrderDetails" Association="Self.FK_ClientOrderDetails">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="OrderDetails" EntitySet="OrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ItemOrderDetails1" Association="Self.FK_ItemOrderDetails1">
+      <End Role="StkItem" EntitySet="StkItem" />
+      <End Role="ItemOrder" EntitySet="ItemOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ItemOrderDetails2" Association="Self.FK_ItemOrderDetails2">
+      <End Role="OrderDetails" EntitySet="OrderDetails" />
+      <End Role="ItemOrder" EntitySet="ItemOrder" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

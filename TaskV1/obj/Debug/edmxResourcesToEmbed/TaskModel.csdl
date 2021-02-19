@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Task_DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="DCLink" />
+    </Key>
+    <Property Name="DCLink" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Account" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Title" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="PriceHalf" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Init" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="Contact_Person" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Physical1" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Physical2" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Physical3" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Physical4" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Physical5" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="PhysicalPC" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Addressee" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Post1" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Post2" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Post3" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Post4" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Post5" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="PostPC" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Delivered_To" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Telephone" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Telephone2" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Fax1" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Fax2" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="AccountTerms" Type="Int32" />
+    <Property Name="CT" Type="Boolean" Nullable="false" />
+    <Property Name="Tax_Number" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Registration" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Credit_Limit" Type="Double" />
+    <Property Name="RepID" Type="Int32" />
+    <Property Name="Interest_Rate" Type="Double" />
+    <Property Name="Discount" Type="Double" />
+    <Property Name="On_Hold" Type="Boolean" Nullable="false" />
+    <Property Name="BFOpenType" Type="Int32" />
+    <Property Name="EMail" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="BankLink" Type="Int32" />
+    <Property Name="BranchCode" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="BankAccNum" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="BankAccType" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="AutoDisc" Type="Double" />
+    <Property Name="DiscMtrxRow" Type="Int32" />
+    <Property Name="MainAccLink" Type="Int32" />
+    <Property Name="CashDebtor" Type="Boolean" Nullable="false" />
+    <Property Name="DCBalance" Type="Double" />
+    <Property Name="CheckTerms" Type="Boolean" Nullable="false" />
+    <Property Name="UseEmail" Type="Boolean" Nullable="false" />
+    <Property Name="iIncidentTypeID" Type="Int32" />
+    <Property Name="iBusTypeID" Type="Int32" />
+    <Property Name="iBusClassID" Type="Int32" />
+    <Property Name="iCountryID" Type="Int32" />
+    <Property Name="iAgentID" Type="Int32" />
+    <Property Name="dTimeStamp" Type="DateTime" Precision="3" />
+    <Property Name="cAccDescription" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="cWebPage" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="iClassID" Type="Int32" />
+    <Property Name="iAreasID" Type="Int32" />
+    <Property Name="cBankRefNr" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="iCurrencyID" Type="Int32" />
+    <Property Name="bStatPrint" Type="Boolean" Nullable="false" />
+    <Property Name="bStatEmail" Type="Boolean" Nullable="false" />
+    <Property Name="cStatEmailPass" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="bForCurAcc" Type="Boolean" Nullable="false" />
+    <Property Name="fForeignBalance" Type="Double" />
+    <Property Name="bTaxPrompt" Type="Boolean" Nullable="false" />
+    <Property Name="iARPriceListNameID" Type="Int32" />
+    <Property Name="iSettlementTermsID" Type="Int32" Nullable="false" />
+    <Property Name="bSourceDocPrint" Type="Boolean" Nullable="false" />
+    <Property Name="bSourceDocEmail" Type="Boolean" Nullable="false" />
+    <Property Name="iEUCountryID" Type="Int32" Nullable="false" />
+    <Property Name="iDefTaxTypeID" Type="Int32" Nullable="false" />
+    <Property Name="bCODAccount" Type="Boolean" Nullable="false" />
+    <Property Name="udARDate" Type="DateTime" Precision="3" />
+    <Property Name="uiARDeliveryMethod" Type="Int32" />
+    <Property Name="tOrderNotes" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="uiARCATID" Type="Int32" />
+    <Property Name="FuelLevyPercen" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="FLID" Type="Int32" Nullable="false" />
+    <Property Name="AccountStatusID" Type="Int32" Nullable="false" />
+    <Property Name="IGUFabRate" Type="Double" Nullable="false" />
+    <Property Name="CreditPercentage" Type="Double" Nullable="false" />
+    <Property Name="TotalDebitBalance" Type="Double" Nullable="false" />
+    <Property Name="TotInvoiced" Type="Double" Nullable="false" />
+    <Property Name="TotPending" Type="Double" Nullable="false" />
+    <Property Name="TotReceived" Type="Double" Nullable="false" />
+    <Property Name="IsGlobalAcc" Type="Boolean" Nullable="false" />
+    <Property Name="IsProspect" Type="Boolean" Nullable="false" />
+    <Property Name="CardIdentification" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LegalName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TrustName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="BusinessEstablished" Type="DateTime" Precision="0" />
+    <Property Name="RegistrationNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ACN" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Token" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="EntityStructureID" Type="Int32" Nullable="false" />
+    <Property Name="InsuredID" Type="Int32" Nullable="false" />
+    <Property Name="CreditApplicationDate" Type="DateTime" Precision="0" />
+    <Property Name="PPS_ExpiryDate" Type="DateTime" Precision="0" />
+    <Property Name="PersonalGurantee" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CC_NameOnCard" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CC_CardNumber" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="CC_ExpiryDate" Type="DateTime" Precision="0" />
+    <Property Name="BSB" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="AcountNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="AcountName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CreditSearch" Type="DateTime" Precision="0" />
+    <Property Name="GONI" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="bSendOrderConfirmations" Type="Boolean" Nullable="false" />
+    <Property Name="EmailOrderConfirmationTo" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EmailTaxInvoicesTo" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EmailStatementsTo" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RebateID" Type="Int32" Nullable="false" />
+    <Property Name="XeroGUID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="OrderDetails" Relationship="Self.FK_ClientOrderDetails" FromRole="Client" ToRole="OrderDetails" />
+  </EntityType>
+  <EntityType Name="ItemOrder">
+    <Key>
+      <PropertyRef Name="IOLink" />
+    </Key>
+    <Property Name="IOLink" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IO_StockLink" Type="Int32" Nullable="false" />
+    <Property Name="IO_ODLink" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="ItemOrderNote" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Qty" Type="Int32" />
+    <Property Name="Price" Type="Decimal" Precision="7" Scale="2" />
+    <Property Name="Tax" Type="Decimal" Precision="7" Scale="2" />
+    <Property Name="ExclAmount" Type="Decimal" Precision="7" Scale="2" />
+    <Property Name="TaxAmount" Type="Decimal" Precision="7" Scale="2" />
+    <Property Name="InclAmount" Type="Decimal" Precision="7" Scale="2" />
+    <NavigationProperty Name="StkItem" Relationship="Self.FK_ItemOrderDetails1" FromRole="ItemOrder" ToRole="StkItem" />
+    <NavigationProperty Name="OrderDetail" Relationship="Self.FK_ItemOrderDetails2" FromRole="ItemOrder" ToRole="OrderDetails" />
+  </EntityType>
+  <EntityType Name="OrderDetail">
+    <Key>
+      <PropertyRef Name="ODLink" />
+    </Key>
+    <Property Name="ODLink" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OD_DCLink" Type="Int32" Nullable="false" />
+    <Property Name="InvoiceNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="InvoiceDate" Type="DateTime" Precision="0" />
+    <Property Name="RefNo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="OrderDetailsNote" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="TotalExclAmount" Type="Decimal" Precision="7" Scale="2" />
+    <Property Name="TotalTaxAmount" Type="Decimal" Precision="7" Scale="2" />
+    <Property Name="TotalInclAmount" Type="Decimal" Precision="7" Scale="2" />
+    <NavigationProperty Name="Client" Relationship="Self.FK_ClientOrderDetails" FromRole="OrderDetails" ToRole="Client" />
+    <NavigationProperty Name="ItemOrders" Relationship="Self.FK_ItemOrderDetails2" FromRole="OrderDetails" ToRole="ItemOrder" />
+  </EntityType>
+  <EntityType Name="StkItem">
+    <Key>
+      <PropertyRef Name="StockLink" />
+    </Key>
+    <Property Name="StockLink" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Description_1" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Description_2" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Description_3" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="ItemGroup" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Pack" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="TTI" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="TTC" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="TTG" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="TTR" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="Bar_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Re_Ord_Lvl" Type="Double" />
+    <Property Name="Re_Ord_Qty" Type="Double" />
+    <Property Name="Min_Lvl" Type="Double" />
+    <Property Name="Max_Lvl" Type="Double" />
+    <Property Name="AveUCst" Type="Double" />
+    <Property Name="LatUCst" Type="Double" />
+    <Property Name="LowUCst" Type="Double" />
+    <Property Name="HigUCst" Type="Double" />
+    <Property Name="StdUCst" Type="Double" />
+    <Property Name="Qty_On_Hand" Type="Double" />
+    <Property Name="LGrvCount" Type="Double" />
+    <Property Name="ServiceItem" Type="Boolean" Nullable="false" />
+    <Property Name="ItemActive" Type="Boolean" Nullable="false" />
+    <Property Name="ReservedQty" Type="Double" />
+    <Property Name="QtyOnPO" Type="Double" />
+    <Property Name="QtyOnSO" Type="Double" />
+    <Property Name="WhseItem" Type="Boolean" Nullable="false" />
+    <Property Name="SerialItem" Type="Boolean" Nullable="false" />
+    <Property Name="DuplicateSN" Type="Boolean" Nullable="false" />
+    <Property Name="StrictSN" Type="Boolean" Nullable="false" />
+    <Property Name="BomCode" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="SMtrxCol" Type="Int32" />
+    <Property Name="PMtrxCol" Type="Int32" />
+    <Property Name="JobQty" Type="Double" />
+    <Property Name="cModel" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="cRevision" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="cComponent" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="dDateReleased" Type="DateTime" Precision="0" />
+    <Property Name="iBinLocationID" Type="Int32" />
+    <Property Name="dStkitemTimeStamp" Type="DateTime" Precision="3" />
+    <Property Name="iInvSegValue1ID" Type="Int32" />
+    <Property Name="iInvSegValue2ID" Type="Int32" />
+    <Property Name="iInvSegValue3ID" Type="Int32" />
+    <Property Name="iInvSegValue4ID" Type="Int32" />
+    <Property Name="iInvSegValue5ID" Type="Int32" />
+    <Property Name="iInvSegValue6ID" Type="Int32" />
+    <Property Name="iInvSegValue7ID" Type="Int32" />
+    <Property Name="cExtDescription" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="cSimpleCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="bCommissionItem" Type="Boolean" Nullable="false" />
+    <Property Name="MFPQty" Type="Double" />
+    <Property Name="bLotItem" Type="Boolean" Nullable="false" />
+    <Property Name="iLotStatus" Type="Int32" />
+    <Property Name="bLotMustExpire" Type="Boolean" Nullable="false" />
+    <Property Name="iItemCostingMethod" Type="Int32" Nullable="false" />
+    <Property Name="fItemLastGRVCost" Type="Double" Nullable="false" />
+    <Property Name="iEUCommodityID" Type="Int32" Nullable="false" />
+    <Property Name="iEUSupplementaryUnitID" Type="Int32" Nullable="false" />
+    <Property Name="fNetMass" Type="Double" Nullable="false" />
+    <Property Name="iUOMStockingUnitID" Type="Int32" />
+    <Property Name="iUOMDefPurchaseUnitID" Type="Int32" />
+    <Property Name="iUOMDefSellUnitID" Type="Int32" />
+    <Property Name="uiIISRVPRICEID" Type="Int32" />
+    <Property Name="ubIIEDGEALLOWANCE" Type="Boolean" />
+    <Property Name="ufIIThickness" Type="Double" />
+    <Property Name="ubIITemplate" Type="Boolean" />
+    <Property Name="uiIITemplPriceID" Type="Int32" />
+    <Property Name="ubIIGLASSSERVICE" Type="Boolean" />
+    <Property Name="uiIIItemType" Type="Int32" />
+    <Property Name="ufIIMINCHRG" Type="Double" />
+    <Property Name="ufIIMINSQM" Type="Double" />
+    <Property Name="ufIIWEIGHT" Type="Double" />
+    <Property Name="uiIIPRICETYPEID" Type="Int32" />
+    <Property Name="ubIIPrintLabels" Type="Boolean" />
+    <Property Name="DefaultGlassService" Type="Boolean" Nullable="false" />
+    <Property Name="IsLaminateItem" Type="Boolean" Nullable="false" />
+    <Property Name="ufIIQtyInVolume" Type="Double" />
+    <Property Name="uiIIMainItemLink" Type="Int32" />
+    <Property Name="ubIIAllowNegative" Type="Boolean" />
+    <Property Name="uiIISupplier" Type="Int32" />
+    <Property Name="uiIIWidth" Type="Int32" />
+    <Property Name="uiIIHeight" Type="Int32" />
+    <Property Name="ufIILotQty" Type="Double" />
+    <Property Name="ufIIGrvQty" Type="Double" />
+    <Property Name="ufIISOQtyVolume" Type="Double" />
+    <Property Name="uiIIWarehouse" Type="Double" />
+    <Property Name="ShowPODes" Type="Boolean" Nullable="false" />
+    <Property Name="IsNonStockItem" Type="Boolean" Nullable="false" />
+    <Property Name="IsExternalItem" Type="Boolean" Nullable="false" />
+    <Property Name="POMinimumArea" Type="Double" Nullable="false" />
+    <Property Name="AccountNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CostCentre" Type="Int32" Nullable="false" />
+    <Property Name="AddDetails" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="SalesAccount" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PurchaseAccount" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Length" Type="Double" />
+    <Property Name="BulkQty" Type="Double" />
+    <Property Name="BulkRate" Type="Double" />
+    <Property Name="PriceListItem" Type="Boolean" Nullable="false" />
+    <Property Name="CalcPriceAsPercentage" Type="Boolean" Nullable="false" />
+    <Property Name="CalcPricePercentage" Type="Double" Nullable="false" />
+    <Property Name="BOMItem" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="ItemOrders" Relationship="Self.FK_ItemOrderDetails1" FromRole="StkItem" ToRole="ItemOrder" />
+  </EntityType>
+  <Association Name="FK_ClientOrderDetails">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="OrderDetails" Type="Self.OrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="DCLink" />
+      </Principal>
+      <Dependent Role="OrderDetails">
+        <PropertyRef Name="OD_DCLink" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ItemOrderDetails1">
+    <End Role="StkItem" Type="Self.StkItem" Multiplicity="1" />
+    <End Role="ItemOrder" Type="Self.ItemOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StkItem">
+        <PropertyRef Name="StockLink" />
+      </Principal>
+      <Dependent Role="ItemOrder">
+        <PropertyRef Name="IO_StockLink" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ItemOrderDetails2">
+    <End Role="OrderDetails" Type="Self.OrderDetail" Multiplicity="1" />
+    <End Role="ItemOrder" Type="Self.ItemOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderDetails">
+        <PropertyRef Name="ODLink" />
+      </Principal>
+      <Dependent Role="ItemOrder">
+        <PropertyRef Name="IO_ODLink" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Task_DBEntities8" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Clients" EntityType="Self.Client" />
+    <EntitySet Name="ItemOrders" EntityType="Self.ItemOrder" />
+    <EntitySet Name="OrderDetails" EntityType="Self.OrderDetail" />
+    <EntitySet Name="StkItems" EntityType="Self.StkItem" />
+    <AssociationSet Name="FK_ClientOrderDetails" Association="Self.FK_ClientOrderDetails">
+      <End Role="Client" EntitySet="Clients" />
+      <End Role="OrderDetails" EntitySet="OrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ItemOrderDetails1" Association="Self.FK_ItemOrderDetails1">
+      <End Role="StkItem" EntitySet="StkItems" />
+      <End Role="ItemOrder" EntitySet="ItemOrders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ItemOrderDetails2" Association="Self.FK_ItemOrderDetails2">
+      <End Role="OrderDetails" EntitySet="OrderDetails" />
+      <End Role="ItemOrder" EntitySet="ItemOrders" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
