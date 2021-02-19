@@ -13,10 +13,10 @@ namespace TaskV1.Model
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Task_DBEntities9 : DbContext
+    public partial class Task_DBEntities11 : DbContext
     {
-        public Task_DBEntities9()
-            : base("name=Task_DBEntities9")
+        public Task_DBEntities11()
+            : base("name=Task_DBEntities11")
         {
         }
     

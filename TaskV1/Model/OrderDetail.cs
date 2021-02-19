@@ -20,11 +20,10 @@ namespace TaskV1.Model
             this.ItemOrders = new HashSet<ItemOrder>();
         }
     
-        public int ODLink { get; set; }
+        public System.Guid RefNo { get; set; }
         public int OD_DCLink { get; set; }
         public string InvoiceNo { get; set; }
         public Nullable<System.DateTime> InvoiceDate { get; set; }
-        public System.Guid RefNo { get; set; }
         public string OrderDetailsNote { get; set; }
         public Nullable<decimal> TotalExclAmount { get; set; }
         public Nullable<decimal> TotalTaxAmount { get; set; }

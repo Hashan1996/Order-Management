@@ -142,11 +142,10 @@
     <Key>
       <PropertyRef Name="RefNo" />
     </Key>
-    <Property Name="ODLink" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RefNo" Type="Guid" Nullable="false" />
     <Property Name="OD_DCLink" Type="Int32" Nullable="false" />
     <Property Name="InvoiceNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
     <Property Name="InvoiceDate" Type="DateTime" Precision="0" />
-    <Property Name="RefNo" Type="Guid" Nullable="false" />
     <Property Name="OrderDetailsNote" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
     <Property Name="TotalExclAmount" Type="Decimal" Precision="7" Scale="2" />
     <Property Name="TotalTaxAmount" Type="Decimal" Precision="7" Scale="2" />
@@ -300,7 +299,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="Task_DBEntities9" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="Task_DBEntities11" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Clients" EntityType="Self.Client" />
     <EntitySet Name="ItemOrders" EntityType="Self.ItemOrder" />
     <EntitySet Name="OrderDetails" EntityType="Self.OrderDetail" />

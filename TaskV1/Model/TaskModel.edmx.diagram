@@ -4,10 +4,10 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="7036c9a14dbb4e2dacc3244fa752baea" Name="Diagram1">
+      <Diagram DiagramId="bf3a3fe676ad434b812ac151184778a7" Name="Diagram1" ZoomLevel="23">
         <EntityTypeShape EntityType="Task_DBModel.Client" Width="1.5" PointX="0.75" PointY="12.875" IsExpanded="true" />
         <EntityTypeShape EntityType="Task_DBModel.ItemOrder" Width="1.5" PointX="5.25" PointY="22.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="Task_DBModel.OrderDetail" Width="1.5" PointX="3" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Task_DBModel.OrderDetail" Width="1.5" PointX="3" PointY="22.875" IsExpanded="true" />
         <EntityTypeShape EntityType="Task_DBModel.StkItem" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
         <AssociationConnector Association="Task_DBModel.FK_ClientOrderDetails" ManuallyRouted="false" />
         <AssociationConnector Association="Task_DBModel.FK_ItemOrderDetails1" ManuallyRouted="false" />

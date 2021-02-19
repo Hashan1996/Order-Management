@@ -144,11 +144,10 @@
           <Key>
             <PropertyRef Name="RefNo" />
           </Key>
-          <Property Name="ODLink" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RefNo" Type="uniqueidentifier" Nullable="false" />
           <Property Name="OD_DCLink" Type="int" Nullable="false" />
           <Property Name="InvoiceNo" Type="nvarchar" MaxLength="100" />
           <Property Name="InvoiceDate" Type="date" />
-          <Property Name="RefNo" Type="uniqueidentifier" Nullable="false" />
           <Property Name="OrderDetailsNote" Type="nvarchar" MaxLength="500" />
           <Property Name="TotalExclAmount" Type="decimal" Precision="7" Scale="2" />
           <Property Name="TotalTaxAmount" Type="decimal" Precision="7" Scale="2" />
@@ -464,11 +463,10 @@
           <Key>
             <PropertyRef Name="RefNo" />
           </Key>
-          <Property Name="ODLink" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RefNo" Type="Guid" Nullable="false" />
           <Property Name="OD_DCLink" Type="Int32" Nullable="false" />
           <Property Name="InvoiceNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="InvoiceDate" Type="DateTime" Precision="0" />
-          <Property Name="RefNo" Type="Guid" Nullable="false" />
           <Property Name="OrderDetailsNote" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
           <Property Name="TotalExclAmount" Type="Decimal" Precision="7" Scale="2" />
           <Property Name="TotalTaxAmount" Type="Decimal" Precision="7" Scale="2" />
@@ -622,7 +620,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="Task_DBEntities9" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="Task_DBEntities11" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Clients" EntityType="Self.Client" />
           <EntitySet Name="ItemOrders" EntityType="Self.ItemOrder" />
           <EntitySet Name="OrderDetails" EntityType="Self.OrderDetail" />
@@ -645,7 +643,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Task_DBModelStoreContainer" CdmEntityContainer="Task_DBEntities9">
+        <EntityContainerMapping StorageEntityContainer="Task_DBModelStoreContainer" CdmEntityContainer="Task_DBEntities11">
           <EntitySetMapping Name="Clients">
             <EntityTypeMapping TypeName="Task_DBModel.Client">
               <MappingFragment StoreEntitySet="Client">
@@ -786,11 +784,10 @@
           <EntitySetMapping Name="OrderDetails">
             <EntityTypeMapping TypeName="Task_DBModel.OrderDetail">
               <MappingFragment StoreEntitySet="OrderDetails">
-                <ScalarProperty Name="ODLink" ColumnName="ODLink" />
+                <ScalarProperty Name="RefNo" ColumnName="RefNo" />
                 <ScalarProperty Name="OD_DCLink" ColumnName="OD_DCLink" />
                 <ScalarProperty Name="InvoiceNo" ColumnName="InvoiceNo" />
                 <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
-                <ScalarProperty Name="RefNo" ColumnName="RefNo" />
                 <ScalarProperty Name="OrderDetailsNote" ColumnName="OrderDetailsNote" />
                 <ScalarProperty Name="TotalExclAmount" ColumnName="TotalExclAmount" />
                 <ScalarProperty Name="TotalTaxAmount" ColumnName="TotalTaxAmount" />

@@ -221,6 +221,10 @@
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\download.png" />
+    <None Include="Resources\a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Model\TaskModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>TaskModel.edmx</DependentUpon>
@@ -231,9 +235,6 @@
       <DependentUpon>TaskModel.edmx</DependentUpon>
       <LastGenOutput>TaskModel.cs</LastGenOutput>
     </Content>
-    <None Include="Resources\download.png" />
-    <None Include="Resources\a.jpg" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

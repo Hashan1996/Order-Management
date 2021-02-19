@@ -139,11 +139,10 @@
     <Key>
       <PropertyRef Name="RefNo" />
     </Key>
-    <Property Name="ODLink" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RefNo" Type="uniqueidentifier" Nullable="false" />
     <Property Name="OD_DCLink" Type="int" Nullable="false" />
     <Property Name="InvoiceNo" Type="nvarchar" MaxLength="100" />
     <Property Name="InvoiceDate" Type="date" />
-    <Property Name="RefNo" Type="uniqueidentifier" Nullable="false" />
     <Property Name="OrderDetailsNote" Type="nvarchar" MaxLength="500" />
     <Property Name="TotalExclAmount" Type="decimal" Precision="7" Scale="2" />
     <Property Name="TotalTaxAmount" Type="decimal" Precision="7" Scale="2" />

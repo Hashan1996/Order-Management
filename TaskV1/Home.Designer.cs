@@ -65,7 +65,7 @@ namespace TaskV1
             this.panel2.Controls.Add(this.dataGridView2);
             this.panel2.Location = new System.Drawing.Point(0, 44);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(977, 406);
+            this.panel2.Size = new System.Drawing.Size(977, 443);
             this.panel2.TabIndex = 2;
             // 
             // dataGridView2
@@ -73,7 +73,7 @@ namespace TaskV1
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(22, 28);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(937, 360);
+            this.dataGridView2.Size = new System.Drawing.Size(937, 380);
             this.dataGridView2.TabIndex = 0;
             this.dataGridView2.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
@@ -89,7 +89,7 @@ namespace TaskV1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(978, 450);
+            this.ClientSize = new System.Drawing.Size(978, 485);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Home";

@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace TaskV1
 {
@@ -15,6 +7,13 @@ namespace TaskV1
         public ReportView()
         {
             InitializeComponent();
+        }
+
+        private void buttonBack_Click(object sender, System.EventArgs e)
+        {
+            this.Hide();
+            SalesOrder salesOrder = new SalesOrder();
+            salesOrder.ShowDialog();
         }
     }
 }

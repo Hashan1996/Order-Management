@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TaskV1
@@ -28,6 +22,9 @@ namespace TaskV1
             salesOrder.ShowDialog();
         }
 
+        /// <summary>
+        /// Get order details for display home page
+        /// </summary>
         private void GetOrderDetails()
         {
             SqlConnection sqlConn = new SqlConnection(conn);
@@ -41,16 +38,19 @@ namespace TaskV1
             sqlConn.Close();
         }
 
+        /// <summary>
+        /// Datagridview cell double clilk, then return to second page and fill order details to text feilds and comboboxes
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            //this.Hide();
+            this.Hide();
             SalesOrder salesOrder = new SalesOrder();
             salesOrder.textBoxRefNo.Text = this.dataGridView2.CurrentRow.Cells[0].Value.ToString();
             salesOrder.comboBox_CustomerName.Text = this.dataGridView2.CurrentRow.Cells[4].Value.ToString();
             salesOrder.textBoxInvoiceNo.Text = this.dataGridView2.CurrentRow.Cells[5].Value.ToString();
-            
             salesOrder.textBoxNote.Text = this.dataGridView2.CurrentRow.Cells[7].Value.ToString();
-            //salesOrder.dataGridView1.Rows[0].Cells[0].Value = this.dataGridView2.CurrentRow.Cells[1].Value.ToString();
             salesOrder.dataGridView1.Rows[0].Cells[1].Value = this.dataGridView2.CurrentRow.Cells[2].Value.ToString();
             salesOrder.dataGridView1.Rows[0].Cells[2].Value = this.dataGridView2.CurrentRow.Cells[3].Value.ToString();
             salesOrder.dataGridView1.Rows[0].Cells[3].Value = this.dataGridView2.CurrentRow.Cells[8].Value.ToString();
